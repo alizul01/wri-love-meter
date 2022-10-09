@@ -156,14 +156,11 @@ export default defineComponent({
       let mathRandom = Math.round(Math.random() * 100);
 
       if (mathRandom > 90) {
-        mathRandom = 85;
+        mathRandom = 75;
       }
 
       const love =
-        name.length * 2 +
-        partner.length * 2 +
-        this.chatting * this.ketemu +
-        mathRandom;
+        name.length + partner.length + this.chatting * this.ketemu + mathRandom;
 
       if (love > 100) {
         this.loveParam = 100;
