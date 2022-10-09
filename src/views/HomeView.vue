@@ -7,7 +7,8 @@
         v-model="name"
         placeholder="Nama Kamu"
         class="
-          w-96
+          w-36
+          sm:w-96
           p-2
           rounded-lg
           border-2 border-gray-300
@@ -23,7 +24,8 @@
         v-model="partner"
         placeholder="Nama Pasanganmu"
         class="
-          w-96
+          w-36
+          sm:w-96
           p-2
           rounded-lg
           border-2 border-gray-300
@@ -37,7 +39,8 @@
       <select
         v-model="chatting"
         class="
-          w-96
+          w-36
+          sm:w-96
           p-2
           rounded-lg
           border-2 border-gray-300
@@ -51,13 +54,13 @@
       </select>
     </div>
 
-    <!-- Sering ketemu sama dia nggak nih? radio type -->
     <div class="flex flex-col items-start mt-4" id="ketemu">
       <label for="ketemu">Kalian sering ketemuan ngga?</label>
       <select
         v-model="ketemu"
         class="
-          w-96
+          w-36
+          sm:w-96
           p-2
           rounded-lg
           border-2 border-gray-300
